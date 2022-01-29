@@ -9,7 +9,7 @@ const userRoutes = require("./routes/api/routes")
 
 const customerRoutes = require("./routes/api/customer")
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 
 //use body-parser
@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 
 
 // use routes 
-app.use("/api/route", userRoutes)
+app.use("/api/route|/", userRoutes)
 
 // customer controller
 app.use("/customer", customerRoutes)
