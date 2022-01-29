@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 
 
 // use routes 
-app.use("/api/route|/", userRoutes)
+app.use("/api/route", userRoutes)
 
 // customer controller
 app.use("/customer", customerRoutes)
