@@ -1,4 +1,5 @@
 const {registerValidation} = require("./validation")
+const db = require("../config")
 
 
 //show the list of employees
