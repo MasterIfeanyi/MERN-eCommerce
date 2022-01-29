@@ -1,11 +1,7 @@
-const { registerValidation } = require("../../controllers/validation")
-const cors = require("cors");
 const { getUsers, saveUser, updateUser, deleteUser } = require("../../controllers/EmployeeController")
 const express = require("express");
 const router = express.Router();
 
-//employeeModel model
-const Employee = require("../../models/User");
 
 
 //@routes GET api/posts
